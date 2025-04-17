@@ -151,3 +151,24 @@ showresult('stump',computerchoice,resultmessage);
     lost:0,
     tie:0
   };
+
+
+  let computerchoice;
+  function generatecomputerchoice()
+  {
+    let randomnumber=Math.random()*3;
+  if(randomnumber>0 && randomnumber<=1)
+{
+  computerchoice='bat';
+  console.log('computer choice is bat ');
+}
+else if(randomnumber >1 && randomnumber<=2)
+{
+  computerchoice='ball';
+  console.log('computer choice is ball');
+}
+else{
+  computerchoice='stump';
+  console.log('computer choice is stump');
+}
+}
