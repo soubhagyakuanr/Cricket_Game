@@ -172,3 +172,23 @@ else{
   console.log('computer choice is stump');
 }
 }
+
+
+
+
+function getresult(usermove,computermove)
+{
+  if(usermove==='bat')
+    {
+      if(computermove==='bat')
+      {
+        score.tie+=1;
+        return 'match is tie';
+        
+      }
+      else if(computermove==='ball')
+      {
+        score.win+=1;
+        return 'user wins';
+       
+      }
