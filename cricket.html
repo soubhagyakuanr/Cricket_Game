@@ -200,6 +200,27 @@ function getresult(usermove,computermove)
       }
     }
 
+    else if(usermove==='ball')
+    {
+      if(computermove==='bat')
+      {
+        score.lost=1;
+        return 'computer wins';
+      }
+      else if(computermove==='ball')
+      {
+        score.tie+=1;
+        return 'match ties';
+        
+      }
+      else if(computermove==='stump')
+      {
+        score.win+=1;
+        return 'user wins';
+        
+      }
+    }
+
 
 
 
