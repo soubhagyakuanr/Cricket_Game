@@ -222,6 +222,26 @@ function getresult(usermove,computermove)
     }
 
 
-
+    else if(usermove==='stump')
+    {
+      if(computermove==='bat')
+      {
+        score.win+=1;
+        return 'user wins';
+        
+      }
+      else if(computermove==='ball')
+      {
+        score.lost+=1;
+        return 'computer wins';
+        
+      }
+      else if(computermove==='stump')
+      {
+        score.tie+=1;
+        return 'match ties';
+        
+      }
+    }
 
  }
