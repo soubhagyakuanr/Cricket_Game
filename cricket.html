@@ -245,3 +245,20 @@ function getresult(usermove,computermove)
     }
 
  }
+
+
+
+ function showresult(user,computerchoice,resultmessage)
+{
+  // localStorage.setItem('SCORE',JSON.stringify(score));
+  console.log(score);
+
+  document.querySelector('#user-move').innerText=`You have choosen ${user}`;
+
+  document.querySelector("#computer-move").innerText=`computer choice is ${computerchoice}`;
+
+  document.querySelector("#result").innerText=`${resultmessage}`;
+
+
+  document.querySelector("#score").innerText=`   win:${score.win} lost:${score.lost} tie:${score.tie}
+  `;
