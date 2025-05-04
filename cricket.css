@@ -11,3 +11,7 @@ body{
   border-radius: 50px;
   cursor: pointer;
 }
+
+.choice-image{
+  height: 75px;
+}
